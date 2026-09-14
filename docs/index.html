@@ -362,6 +362,11 @@ function getPin(){let p=sessionStorage.getItem('hive-pin');if(!p){p=prompt('Hive
 function getKey(){let k='';try{k=localStorage.getItem('hive-key')||''}catch{}
   if(!k){k=prompt('Hive access key (WEB_AUTH_KEY on your server):')||'';if(k){try{localStorage.setItem('hive-key',k)}catch{}}}
   return k}
+/* relay token lives per-device (never in the repo — GitHub push protection) */
+function getRelayToken(){let t='';try{t=localStorage.getItem('hive-relay-token')||''}catch{}
+  if(!t){t=prompt('Relay token — the fine-grained GitHub token (Contents read/write on the dashboard repo). Stored only on this device:')||'';
+    if(t){try{localStorage.setItem('hive-relay-token',t)}catch{}}}
+  return t}
 async function sendCommand(payload){
   LASTREPLY=null;
   if(CLOUD){
@@ -377,12 +382,13 @@ async function sendCommand(payload){
   }
   if(!RELAY.relay){setHint('Chat is not configured yet — see docs/WEB_DASHBOARD.md (relay section) on your Mac.');return false}
   const pin=getPin();if(!pin){setHint('PIN required.');return false}
+  const rtok=RELAY.token||getRelayToken();if(!rtok){setHint('Relay token required — see docs/WEB_DASHBOARD.md on your Mac.');return false}
   const id='m'+Date.now().toString(36)+Math.random().toString(36).slice(2,7);
   const body={id,pin,type:payload.type||'chat',text:payload.text||'',provider:payload.provider||undefined};
   const content=btoa(unescape(encodeURIComponent(JSON.stringify(body))));
   try{
     const r=await fetch('https://api.github.com/repos/'+RELAY.repo+'/contents/docs/inbox/'+id+'.json',{
-      method:'PUT',headers:{authorization:'Bearer '+RELAY.token,'content-type':'application/json'},
+      method:'PUT',headers:{authorization:'Bearer '+rtok,'content-type':'application/json'},
       body:JSON.stringify({message:'hive relay: '+id,content,branch:'main'})});
     if(!r.ok)throw new Error('HTTP '+r.status);
     setHint('Sent ✓ — Hive picks it up within ~1 min; the reply appears here.');

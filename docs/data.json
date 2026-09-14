@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated_at": "2026-09-14T21:41:09.774Z",
+  "generated_at": "2026-09-14T21:46:11.935Z",
   "user": "Pouria",
   "engine": {
     "version": "0.1.0",
@@ -54,16 +54,16 @@
       "role": "observer",
       "enabled": true,
       "model": null,
-      "lastRun": "2026-09-14T21:37:08.656Z",
+      "lastRun": "2026-09-14T21:42:12.627Z",
       "lastSummary": "Observer sweep: 0 observations reviewed, 0 pattern(s) detected",
       "consecutiveErrors": 0,
       "awaitingInput": false,
       "lastQuery": null,
       "recentCycles": [
-        "17:21 — Observer sweep: 0 observations reviewed, 0 pattern(s) detected",
         "17:26 — Observer sweep: 0 observations reviewed, 0 pattern(s) detected",
         "17:31 — Observer sweep: 0 observations reviewed, 0 pattern(s) detected",
-        "17:37 — Observer sweep: 0 observations reviewed, 0 pattern(s) detected"
+        "17:37 — Observer sweep: 0 observations reviewed, 0 pattern(s) detected",
+        "17:42 — Observer sweep: 0 observations reviewed, 0 pattern(s) detected"
       ]
     },
     {
@@ -380,36 +380,6 @@
   },
   "events": [
     {
-      "start": "2026-09-30T04:00:00.000Z",
-      "title": "National Day for Truth and Reconciliation (regional holiday)",
-      "location": null,
-      "category": "personal"
-    },
-    {
-      "start": "2026-10-12T04:00:00.000Z",
-      "title": "Thanksgiving Day (regional holiday)",
-      "location": null,
-      "category": "personal"
-    },
-    {
-      "start": "2026-09-30T13:30:00.000Z",
-      "title": "Finishing & Fabrication Specialist",
-      "location": "079 Jane Street",
-      "category": "personal"
-    },
-    {
-      "start": "2026-09-21T13:30:00.000Z",
-      "title": "Finishing & Fabrication Specialist",
-      "location": "079 Jane Street",
-      "category": "personal"
-    },
-    {
-      "start": "2026-09-18T17:00:00.000Z",
-      "title": "Finishing & Fabrication Specialist",
-      "location": "079 Jane Street",
-      "category": "personal"
-    },
-    {
       "start": "2026-09-16T13:30:00.000Z",
       "title": "Finishing & Fabrication Specialist",
       "location": "079 Jane Street",
@@ -422,147 +392,21 @@
       "category": "personal"
     },
     {
-      "start": "2026-09-23T13:30:00.000Z",
-      "title": "Finishing & Fabrication Specialist",
-      "location": "079 Jane Street",
-      "category": "personal"
-    },
-    {
-      "start": "2026-09-25T17:00:00.000Z",
-      "title": "Finishing & Fabrication Specialist",
-      "location": "079 Jane Street",
-      "category": "personal"
-    },
-    {
-      "start": "2026-09-28T13:30:00.000Z",
-      "title": "Finishing & Fabrication Specialist",
-      "location": "079 Jane Street",
-      "category": "personal"
-    },
-    {
-      "start": "2026-10-06T19:00:00.000Z",
-      "title": "AP ECON 2350 Lecture",
-      "location": null,
-      "category": "class"
-    },
-    {
-      "start": "2026-10-01T20:00:00.000Z",
-      "title": "AP ECON 2500 Lecture",
-      "location": null,
-      "category": "class"
-    },
-    {
-      "start": "2026-10-06T23:00:00.000Z",
-      "title": "AP ADMS 2500 Lecture",
-      "location": null,
-      "category": "class"
-    },
-    {
-      "start": "2026-09-22T19:00:00.000Z",
-      "title": "AP ECON 2350 Lecture",
-      "location": null,
-      "category": "class"
-    },
-    {
       "start": "2026-09-15T19:00:00.000Z",
       "title": "AP ECON 2350 Lecture",
-      "location": null,
-      "category": "class"
-    },
-    {
-      "start": "2026-10-15T20:00:00.000Z",
-      "title": "AP ECON 2500 Lecture",
-      "location": null,
-      "category": "class"
-    },
-    {
-      "start": "2026-10-13T23:00:00.000Z",
-      "title": "AP ADMS 2500 Lecture",
-      "location": null,
-      "category": "class"
-    },
-    {
-      "start": "2026-10-08T20:00:00.000Z",
-      "title": "AP ECON 2500 Lecture",
-      "location": null,
+      "location": "missing value",
       "category": "class"
     },
     {
       "start": "2026-09-15T23:00:00.000Z",
       "title": "AP ADMS 2500 Lecture",
-      "location": null,
-      "category": "class"
-    },
-    {
-      "start": "2026-09-22T23:00:00.000Z",
-      "title": "AP ADMS 2500 Lecture",
-      "location": null,
-      "category": "class"
-    },
-    {
-      "start": "2026-09-17T20:00:00.000Z",
-      "title": "AP ECON 2500 Lecture",
-      "location": null,
-      "category": "class"
-    },
-    {
-      "start": "2026-09-29T23:00:00.000Z",
-      "title": "AP ADMS 2500 Lecture",
-      "location": null,
-      "category": "class"
-    },
-    {
-      "start": "2026-10-13T19:00:00.000Z",
-      "title": "AP ECON 2350 Lecture",
-      "location": null,
-      "category": "class"
-    },
-    {
-      "start": "2026-10-08T23:00:00.000Z",
-      "title": "SC MATH 1581 Lecture",
-      "location": null,
-      "category": "class"
-    },
-    {
-      "start": "2026-09-17T23:00:00.000Z",
-      "title": "SC MATH 1581 Lecture",
-      "location": null,
-      "category": "class"
-    },
-    {
-      "start": "2026-09-24T20:00:00.000Z",
-      "title": "AP ECON 2500 Lecture",
-      "location": null,
-      "category": "class"
-    },
-    {
-      "start": "2026-09-24T23:00:00.000Z",
-      "title": "SC MATH 1581 Lecture",
-      "location": null,
-      "category": "class"
-    },
-    {
-      "start": "2026-10-15T23:00:00.000Z",
-      "title": "SC MATH 1581 Lecture",
-      "location": null,
-      "category": "class"
-    },
-    {
-      "start": "2026-09-29T19:00:00.000Z",
-      "title": "AP ECON 2350 Lecture",
-      "location": null,
-      "category": "class"
-    },
-    {
-      "start": "2026-10-01T23:00:00.000Z",
-      "title": "SC MATH 1581 Lecture",
-      "location": null,
+      "location": "missing value",
       "category": "class"
     },
     {
       "start": "2026-09-15T13:00:00.000Z",
       "title": "go and see the doctor",
-      "location": null,
+      "location": "missing value",
       "category": "personal"
     }
   ],

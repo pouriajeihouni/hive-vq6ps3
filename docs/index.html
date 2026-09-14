@@ -393,7 +393,12 @@ async function sendCommand(payload){
     if(!r.ok)throw new Error('HTTP '+r.status);
     setHint('Sent ✓ — Hive picks it up within ~1 min; the reply appears here.');
     return true;
-  }catch(e){setHint('Send failed ('+e.message+'). Check connection.');return false}
+  }catch(e){
+    if(/HTTP 40[13]/.test(e.message)){ /* token rejected — clear it so the next send re-prompts */
+      try{localStorage.removeItem('hive-relay-token')}catch{}
+      setHint('Token rejected ('+e.message+') — it was cleared; you\'ll be asked again on the next send. It must have Contents: Read and write on this repo.')}
+    else{setHint('Send failed ('+e.message+'). Check connection.')}
+    return false}
 }
 function setHint(t){$('chat-hint').textContent=t}
 /* ── file attach (cloud engine) ── */

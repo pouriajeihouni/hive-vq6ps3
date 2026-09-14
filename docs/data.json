@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated_at": "2026-09-14T21:56:24.607Z",
+  "generated_at": "2026-09-14T22:01:24.634Z",
   "user": "Pouria",
   "engine": {
     "version": "0.1.0",
@@ -54,16 +54,16 @@
       "role": "observer",
       "enabled": true,
       "model": null,
-      "lastRun": "2026-09-14T21:52:42.526Z",
+      "lastRun": "2026-09-14T21:57:55.426Z",
       "lastSummary": "Observer sweep: 0 observations reviewed, 0 pattern(s) detected",
       "consecutiveErrors": 0,
       "awaitingInput": false,
       "lastQuery": null,
       "recentCycles": [
-        "17:37 — Observer sweep: 0 observations reviewed, 0 pattern(s) detected",
         "17:42 — Observer sweep: 0 observations reviewed, 0 pattern(s) detected",
         "17:47 — Observer sweep: 0 observations reviewed, 0 pattern(s) detected",
-        "17:52 — Observer sweep: 0 observations reviewed, 0 pattern(s) detected"
+        "17:52 — Observer sweep: 0 observations reviewed, 0 pattern(s) detected",
+        "17:57 — Observer sweep: 0 observations reviewed, 0 pattern(s) detected"
       ]
     },
     {
@@ -122,8 +122,8 @@
         "name": "Inbox",
         "tags": [],
         "links": [],
-        "modified": "2026-09-14T21:09:09.271Z",
-        "size": 16774,
+        "modified": "2026-09-14T22:00:09.801Z",
+        "size": 16976,
         "snippet": "- **2026-09-13 17:17:32** ❓ Your vault is fresh — I need your calendar and tasks to be useful. Can you share: (1) this week's class schedule with times and rooms, (2) TPH shifts, and (3) any urgent deadlines? I'll organize everything into the vault structure. - _reply: npm run sa"
       },
       {
@@ -219,8 +219,8 @@
         "name": "Notifications",
         "tags": [],
         "links": [],
-        "modified": "2026-09-14T21:34:38.343Z",
-        "size": 19435,
+        "modified": "2026-09-14T22:00:39.625Z",
+        "size": 19657,
         "snippet": "- **2026-09-13 17:17:32** — **☀️ Daily Brief**: Good evening Pouria! Sunday evening — no classes or work scheduled tomorrow. The vault is nearly empty (just the welcome note), so I don't have your calendar, tasks, or course details loaded yet. Let's get organized: share your clas"
       },
       {
@@ -412,11 +412,6 @@
   ],
   "reminders": [
     {
-      "dueAt": "2026-09-14T22:00:35.351Z",
-      "message": "Remember to log a workout session today",
-      "priority": "normal"
-    },
-    {
       "dueAt": "2026-09-14T22:10:44.046Z",
       "message": "Log your workout session for today",
       "priority": "normal"
@@ -454,6 +449,21 @@
   "observer": {
     "recent": [
       {
+        "at": "2026-09-14T22:00:39.642Z",
+        "type": "notification",
+        "text": "Remember to log a workout session today"
+      },
+      {
+        "at": "2026-09-14T22:00:09.802Z",
+        "type": "checkin",
+        "text": "🌆 OBSERVER EVENING CHECK — what stood out today? Any insights to capture?"
+      },
+      {
+        "at": "2026-09-14T21:57:55.431Z",
+        "type": "cycle",
+        "text": "Observer sweep: 0 observations reviewed, 0 pattern(s) detected"
+      },
+      {
         "at": "2026-09-14T21:52:42.530Z",
         "type": "cycle",
         "text": "Observer sweep: 0 observations reviewed, 0 pattern(s) detected"
@@ -477,33 +487,18 @@
         "at": "2026-09-14T21:34:38.513Z",
         "type": "notification",
         "text": "Wrap up TPH shift and complete H&S checklist"
-      },
-      {
-        "at": "2026-09-14T21:31:54.162Z",
-        "type": "cycle",
-        "text": "Observer sweep: 0 observations reviewed, 0 pattern(s) detected"
-      },
-      {
-        "at": "2026-09-14T21:29:33.486Z",
-        "type": "notification",
-        "text": "Shift wrap‑up: finish Finishing & Fabrication Specialist tasks and log H&S checklist entry"
-      },
-      {
-        "at": "2026-09-14T21:26:49.069Z",
-        "type": "cycle",
-        "text": "Observer sweep: 0 observations reviewed, 0 pattern(s) detected"
       }
     ],
     "stats": {
-      "total": 275,
+      "total": 278,
       "byType": {
-        "cycle": 210,
+        "cycle": 211,
         "pattern": 1,
         "environment": 21,
-        "checkin": 4,
+        "checkin": 5,
         "dispatch": 16,
         "dispatch_result": 15,
-        "notification": 8
+        "notification": 9
       },
       "oldest": "2026-09-13T22:39:13.818Z"
     }
